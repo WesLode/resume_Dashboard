@@ -1,0 +1,1062 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Resume_Dashboard_v1' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Work+ (Resume_for_dashboard_v1)' inline='true' name='federated.0hka3h81oluf5k156g5ig1ona13f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Resume_for_dashboard_v1' name='excel-direct.0l6y39y04ohqxz12aj8310zvg5g9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/www16/someProject/resume_Dashboard/Doc/Resume_for_dashboard_v1.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Work+' type='union'>
+          <columns header='yes'>
+            <column datatype='integer' name='Label' />
+            <column datatype='string' name='Experience Type' />
+            <column datatype='string' name='Organization' />
+            <column datatype='integer' name='year start' />
+            <column datatype='integer' name='year end' />
+            <column datatype='string' name='Location' />
+            <column datatype='string' name='Tools/Software' />
+            <column datatype='string' name='Summary' />
+            <column datatype='integer' name='Year of experience' />
+            <column datatype='integer' name='Max experinece' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.0l6y39y04ohqxz12aj8310zvg5g9' name='Work' table='[Work$]' type='table'>
+            <columns gridOrigin='A1:H7:no:A1:H7:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Label' ordinal='0' />
+              <column datatype='string' name='Experience Type' ordinal='1' />
+              <column datatype='string' name='Organization' ordinal='2' />
+              <column datatype='integer' name='year start' ordinal='3' />
+              <column datatype='integer' name='year end' ordinal='4' />
+              <column datatype='string' name='Location' ordinal='5' />
+              <column datatype='string' name='Tools/Software' ordinal='6' />
+              <column datatype='string' name='Summary' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0l6y39y04ohqxz12aj8310zvg5g9' name='Skill' table='[Skill$]' type='table'>
+            <columns gridOrigin='A1:C22:no:A1:C22:0' header='yes' outcome='2'>
+              <column datatype='string' name='Tools/Software' ordinal='0' />
+              <column datatype='integer' name='Year of experience' ordinal='1' />
+              <column datatype='integer' name='Max experinece' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='Work+' type='union'>
+          <columns header='yes'>
+            <column datatype='integer' name='Label' />
+            <column datatype='string' name='Experience Type' />
+            <column datatype='string' name='Organization' />
+            <column datatype='integer' name='year start' />
+            <column datatype='integer' name='year end' />
+            <column datatype='string' name='Location' />
+            <column datatype='string' name='Tools/Software' />
+            <column datatype='string' name='Summary' />
+            <column datatype='integer' name='Year of experience' />
+            <column datatype='integer' name='Max experinece' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.0l6y39y04ohqxz12aj8310zvg5g9' name='Work' table='[Work$]' type='table'>
+            <columns gridOrigin='A1:H7:no:A1:H7:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Label' ordinal='0' />
+              <column datatype='string' name='Experience Type' ordinal='1' />
+              <column datatype='string' name='Organization' ordinal='2' />
+              <column datatype='integer' name='year start' ordinal='3' />
+              <column datatype='integer' name='year end' ordinal='4' />
+              <column datatype='string' name='Location' ordinal='5' />
+              <column datatype='string' name='Tools/Software' ordinal='6' />
+              <column datatype='string' name='Summary' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0l6y39y04ohqxz12aj8310zvg5g9' name='Skill' table='[Skill$]' type='table'>
+            <columns gridOrigin='A1:C22:no:A1:C22:0' header='yes' outcome='2'>
+              <column datatype='string' name='Tools/Software' ordinal='0' />
+              <column datatype='integer' name='Year of experience' ordinal='1' />
+              <column datatype='integer' name='Max experinece' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Label</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Label]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Label</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Experience Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Experience Type]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Experience Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Organization</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Organization]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Organization</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year start</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year start]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>year start</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year end</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year end]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>year end</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tools/Software</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tools/Software]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Tools/Software</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Summary</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Summary]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Summary</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of experience</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of experience]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Year of experience</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max experinece</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max experinece]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Max experinece</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Work+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Duration in Years' datatype='integer' name='[Calculation_1077204796170993667]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='- [year start] + [year end]' />
+      </column>
+      <column caption='Organization1' datatype='string' name='[Organization]' role='dimension' type='nominal' />
+      <column caption='Summary1' datatype='string' name='[Summary]' role='dimension' type='nominal' />
+      <column caption='Tools/Software1' datatype='string' name='[Tools/Software]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year of experience]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Work' datatype='table' name='[__tableau_internal_object_id__].[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]' role='measure' type='quantitative' />
+      <column caption='Year End' datatype='integer' name='[year end]' role='dimension' type='quantitative' />
+      <column caption='Year Start' datatype='integer' name='[year start]' role='dimension' type='quantitative' />
+      <column-instance column='[Year of experience]' derivation='Sum' name='[sum:Year of experience:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/www16/AppData/Local/Temp/TableauTemp/#TableauTemp_1cf0q2n068btyj1czk0y90plfo7o.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/12/2024 11:07:22 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Label</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Label</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Work+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Experience Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Experience Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Experience Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Work+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Organization</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Organization]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Organization</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Work+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year start</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year start</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Work+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year end</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year end]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year end</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Work+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Work+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tools/Software</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tools/Software]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tools/Software</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Work+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Summary</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Summary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Summary</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Work+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of experience</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of experience]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year of experience</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Work+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Max experinece</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Max experinece]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Max experinece</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Work+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sheet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sheet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sheet</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Work+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Work+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_62D5149AC73D4C28BCEC2823BD8AD3EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau-20' type='palette'>
+            <map to='#5500ff'>
+              <bucket>&quot;[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Year of experience:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Work' id='Work_62D5149AC73D4C28BCEC2823BD8AD3EA'>
+            <properties context=''>
+              <relation all='true' name='Work+' type='union'>
+                <columns header='yes'>
+                  <column datatype='integer' name='Label' />
+                  <column datatype='string' name='Experience Type' />
+                  <column datatype='string' name='Organization' />
+                  <column datatype='integer' name='year start' />
+                  <column datatype='integer' name='year end' />
+                  <column datatype='string' name='Location' />
+                  <column datatype='string' name='Tools/Software' />
+                  <column datatype='string' name='Summary' />
+                  <column datatype='integer' name='Year of experience' />
+                  <column datatype='integer' name='Max experinece' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.0l6y39y04ohqxz12aj8310zvg5g9' name='Work' table='[Work$]' type='table'>
+                  <columns gridOrigin='A1:H7:no:A1:H7:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='Label' ordinal='0' />
+                    <column datatype='string' name='Experience Type' ordinal='1' />
+                    <column datatype='string' name='Organization' ordinal='2' />
+                    <column datatype='integer' name='year start' ordinal='3' />
+                    <column datatype='integer' name='year end' ordinal='4' />
+                    <column datatype='string' name='Location' ordinal='5' />
+                    <column datatype='string' name='Tools/Software' ordinal='6' />
+                    <column datatype='string' name='Summary' ordinal='7' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0l6y39y04ohqxz12aj8310zvg5g9' name='Skill' table='[Skill$]' type='table'>
+                  <columns gridOrigin='A1:C22:no:A1:C22:0' header='yes' outcome='2'>
+                    <column datatype='string' name='Tools/Software' ordinal='0' />
+                    <column datatype='integer' name='Year of experience' ordinal='1' />
+                    <column datatype='integer' name='Max experinece' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Contact'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Default Caption&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{54281CDE-977C-43AF-965E-5C7726225C03}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Timeline</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work+ (Resume_for_dashboard_v1)' name='federated.0hka3h81oluf5k156g5ig1ona13f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hka3h81oluf5k156g5ig1ona13f'>
+            <column caption='Duration in Years' datatype='integer' name='[Calculation_1077204796170993667]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='- [year start] + [year end]' />
+            </column>
+            <column caption='Organization1' datatype='string' name='[Organization]' role='dimension' type='nominal' />
+            <column caption='Summary1' datatype='string' name='[Summary]' role='dimension' type='nominal' />
+            <column-instance column='[Summary]' derivation='Attribute' name='[attr:Summary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Organization]' derivation='None' name='[none:Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year start]' derivation='None' name='[none:year start:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1077204796170993667]' derivation='Sum' name='[sum:Calculation_1077204796170993667:qk]' pivot='key' type='quantitative' />
+            <column caption='Year End' datatype='integer' name='[year end]' role='dimension' type='quantitative' />
+            <column caption='Year Start' datatype='integer' name='[year start]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Organization:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Organization:nk]' member='&quot;DHS FEMA&quot;' />
+              <groupfilter function='member' level='[none:Organization:nk]' member='&quot;DHS HQ&quot;' />
+              <groupfilter function='member' level='[none:Organization:nk]' member='&quot;First Guarantee Mortgage Company&quot;' />
+              <groupfilter function='member' level='[none:Organization:nk]' member='&quot;Flagstar Bank&quot;' />
+              <groupfilter function='member' level='[none:Organization:nk]' member='&quot;National Cancer Institute&quot;' />
+              <groupfilter function='member' level='[none:Organization:nk]' member='&quot;Olivet Nazarene University&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Organization:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:year start:qk]' field-type='quantitative' major-origin='2012' major-spacing='2' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:year start:qk]' scope='cols' value='Year' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#efebe8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Organization:nk]' />
+              <size column='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Calculation_1077204796170993667:qk]' />
+              <tooltip column='[federated.0hka3h81oluf5k156g5ig1ona13f].[attr:Summary:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.21889503300189972' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0hka3h81oluf5k156g5ig1ona13f].[none:year start:qk]</cols>
+      </table>
+      <simple-id uuid='{0BAC32A2-D38D-4207-8FD9-7B9C27AA6F6F}' />
+    </worksheet>
+    <worksheet name='Skill'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Skill</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work+ (Resume_for_dashboard_v1)' name='federated.0hka3h81oluf5k156g5ig1ona13f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hka3h81oluf5k156g5ig1ona13f'>
+            <column caption='0.0' datatype='real' name='[Calculation_1077204796157378562]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='0.0' />
+            </column>
+            <column datatype='integer' name='[Max experinece]' role='measure' type='quantitative' />
+            <column caption='Tools/Software1' datatype='string' name='[Tools/Software]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year of experience]' role='measure' type='quantitative' />
+            <column-instance column='[Tools/Software]' derivation='None' name='[none:Tools/Software:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1077204796157378562]' derivation='Sum' name='[sum:Calculation_1077204796157378562:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Max experinece]' derivation='Sum' name='[sum:Max experinece:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of experience]' derivation='Sum' name='[sum:Year of experience:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;AWS&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;Git&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;MongoDB&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;MySql&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;Postgres&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;Python&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;Qlik Sense&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;SQL Server&quot;' />
+              <groupfilter function='member' level='[none:Tools/Software:nk]' member='&quot;Tableau&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]' direction='DESC' using='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Year of experience:qk]' />
+          <slices>
+            <column>[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Year of experience:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Calculation_1077204796157378562:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Year of experience:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_0' value='#00000000' />
+            <format attr='body-type' id='annotation_0' value='none' />
+            <format attr='line-end-size' id='annotation_0' value='smallest' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Calculation_1077204796157378562:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Max experinece:qk]' />
+              <text column='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='14' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ff9da7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Year of experience:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0hka3h81oluf5k156g5ig1ona13f].[:Measure Names]' />
+              <text column='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='off' />
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='left' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3733149766921997' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-max' value='false' />
+                <format attr='mark-labels-range-min' value='false' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]</rows>
+        <cols>([federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Calculation_1077204796157378562:qk] + [federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Year of experience:qk])</cols>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontalignment='0'>MongDB</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='0.023823242237238338'>
+                  <node-reference>
+                    <axis>[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Calculation_1077204796157378562:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord cell-offset='0.413825'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;AWS&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='0.91322428576080283'>
+                  <node-reference>
+                    <axis>[federated.0hka3h81oluf5k156g5ig1ona13f].[sum:Calculation_1077204796157378562:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord cell-offset='0.243318'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Tools/Software:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;MongoDB&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{56FEB614-A400-4B63-A9CA-E919F5F71A3F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98684' id='14' param='vert' type-v2='layout-flow' w='99318' x='341' y='658'>
+            <zone h='98684' id='11' param='horz' type-v2='layout-flow' w='99318' x='341' y='658'>
+              <zone h='98684' id='9' type-v2='layout-basic' w='99318' x='341' y='658'>
+                <zone h='34731' id='7' param='horz' type-v2='layout-flow' w='99318' x='341' y='64611'>
+                  <zone h='34731' id='5' type-v2='layout-basic' w='99318' x='341' y='64611'>
+                    <zone h='34731' id='3' name='Sheet 2' show-title='false' w='99318' x='341' y='64611'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='49727' id='8' name='Skill' w='99318' x='341' y='14884'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14226' id='12' type-v2='text' w='99318' x='341' y='658'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Tableau Regular' fontsize='22'>Wesley Lau</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontname='Tableau Regular' fontsize='14'>Data Analysis</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontname='Tableau Regular' fontsize='14'>571.354.9369|wesleylau.wcl@gmail.com|</run>
+                    <run bold='true' fontalignment='1' fontcolor='#0000ff' fontname='Tableau Regular' fontsize='14' underline='true'>Linkedin Profile</run>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Tableau Regular' fontsize='14'>Æ </run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98684' id='17' param='vert' type-v2='layout-flow' w='99318' x='341' y='658'>
+                <zone forceUpdate='true' h='18585' id='12' type-v2='text' w='99318' x='341' y='658'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Tableau Regular' fontsize='22'>Wesley Lau</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontname='Tableau Regular' fontsize='14'>Data Analysis</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontname='Tableau Regular' fontsize='14'>571.354.9369|wesleylau.wcl@gmail.com|</run>
+                    <run bold='true' fontalignment='1' fontcolor='#0000ff' fontname='Tableau Regular' fontsize='14' underline='true'>Linkedin Profile</run>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Tableau Regular' fontsize='14'>Æ </run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='246' h='45370' id='8' is-fixed='true' name='Skill' w='99318' x='341' y='19243'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='186' h='34729' id='3' is-fixed='true' name='Sheet 2' show-title='false' w='99318' x='341' y='64613'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DC075FF9-34E3-4A37-B2B4-59AB091BE19D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Skill'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='2' param='[federated.0hka3h81oluf5k156g5ig1ona13f].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C3C149DB-B503-4D28-8F6D-702965A334B8}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hka3h81oluf5k156g5ig1ona13f].[none:Organization:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CBF4A49D-755C-4082-8CB1-E9446A70E0FD}' />
+    </window>
+    <window class='worksheet' name='Contact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A3374A85-4F27-4E75-A8BF-CDF4BA496B6D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Skill'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{33A22711-EB2A-44B2-8751-B1DFA96BBDA9}' />
+    </window>
+  </windows>
+</workbook>
